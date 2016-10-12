@@ -1,0 +1,3 @@
+[submodule "themes/theme-dissonance-zsh"]
+	path = themes/theme-dissonance-zsh
+	url = https://github.com/RyanScottLewis/theme-dissonance-zsh.git

@@ -1,6 +1,13 @@
 # General
-alias l="ls -al --color=auto"
-alias t="touch" 
+
+unamestr=`uname`
+if [[ "$unamestr" == 'Linux' ]]; then
+  alias l="ls -al --color=auto"
+elif [[ "$unamestr" == 'Darwin' || "$unamestr" == 'FreeBSD' ]]; then
+  alias l="ls -alG"
+fi
+
+alias t="touch"
 alias f="$EXPLORER" # F for File System # TODO: EXPLORER is unused =[
 alias e="$EDITOR" # E for Editor
 alias p="$PAGER" # P for Pager
